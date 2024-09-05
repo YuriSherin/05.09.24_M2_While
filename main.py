@@ -1,14 +1,13 @@
 my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
 print(my_list)
 
-index = 0
-while index < len(my_list):
-    if my_list[index] == 0:
-        index += 1
-        continue
-    elif my_list[index] > 0:
-        print(my_list[index])
-        index += 1
-    else:
-        break
-
+index = 0                       # Вспомогательная переменная
+while index < len(my_list):     # Цикл, пока условие выполняется
+    if my_list[index] == 0:     # Если элемент списка равен 0
+        index += 1              # Увеличиваем зачение index
+        continue                # Пропускаем все остальные команды и переходим в начало цикла
+    elif my_list[index] > 0:    # Если элемент списка является положительным числом
+        print(my_list[index])   # Выводим значение в консоль
+        index += 1              # Увеличиваем значение index и переходим в начало цикла
+    else:                       # Если элемент списка является числом отрицательным
+        break                   # Выходим из цикла
